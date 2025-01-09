@@ -23,4 +23,3 @@ Make sure that network architecture parameters (e.g. `d_model`) used to fine-tun
 ```bash
 python src/main.py --output_dir experiments --comment "finetune for classification" --name Robot_finetuned --records_file Classification_records.xls --data_dir /path/to/Datasets/Classification/Robot/ --data_class robot --pattern TRAIN --val_pattern TEST --epochs 100 --lr 0.001 --optimizer RAdam --batch_size 128 --pos_encoding learnable --d_model 64 --load_model path/to/Robot_pretrained/checkpoints/model_best.pth --task classification --change_output --key_metric accuracy
 ```
-# robot_intrusion_detection
